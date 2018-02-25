@@ -144,9 +144,9 @@ nav{
 
 
 
-#slide1
+#me
 {
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/feet.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/face.jpg) center fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -186,7 +186,7 @@ nav{
 
 #kontakt
 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/hochformat.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/feet.jpg) fixed;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
