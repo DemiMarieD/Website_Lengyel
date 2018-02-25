@@ -1,0 +1,236 @@
+
+a{
+  color:inherit;
+}
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  
+  } 
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  } 
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  } 
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  none;
+  } 
+
+
+html{
+  zoom:1.0;
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  font-family:  "Segoe UI", sans-serif;
+}
+
+
+body{
+  cursor: default;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+  transition: all 500ms ease-in;
+}
+
+
+/*  Navbar  */
+
+nav{
+  z-index: 9999;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  right: 0;
+}
+
+
+/*         Menu Top            */
+
+#top{
+  width: 100%;
+  height: 40vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 80%;
+}
+
+/*         Menu Middle            */
+#middle{
+  width: 100%;
+  height: 30vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_center{
+  width: 80%;
+  height: auto;
+
+}
+
+.item_center ul{
+  list-style: none;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_point{
+  margin: 5px;
+  z-index: 1000;
+  float: left;
+  margin-left: 15px;
+}
+
+.menu_dot{
+  height: 20px;
+  width: auto;
+  margin: 0;
+}
+
+/*         Menu Bottom           */
+
+#bottom{
+  padding-bottom: 10px ;
+  width: 100%;
+  height: 30vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_point{
+  margin: 2px;
+  font-size: small;
+  float: left;
+  margin-left: 15px;
+}
+
+#name{
+  color: orange;
+}
+
+/* Main Page */
+
+#main
+{
+  text-align: center;
+  font-style: oblique;
+  background:url(images/Swen_pic_text.png) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  overflow: auto;
+} 
+
+
+
+#slide1
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/feet.jpg) fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+  transition: all 200ms ease-in;
+}
+
+
+#erfahrungen
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/whichWay.jpg) center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+}
+
+#slide3
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/walkAway.jpg) center fixed;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  background-origin: content-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+#kontakt
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/hochformat.jpg);
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;   
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+
+
+@media all and (max-width: 600px) 
+{
+
+ #pic, h4 {
+    transition: all 500ms ease-in;
+  }
+
+  h4 {
+    transition: all 500ms ease-in;
+    padding-top: 10%;
+  }
+  
+  .normal, .rechts {
+    width: 70%;
+  }
+
+  h1 {
+    transition: all 500ms ease-in;
+    top: 40%; 
+  }
+}
+
+@media all and (min-width: 800px) 
+{
+
+ .kontakt, #pic, h4 {
+    transition: all 500ms ease-in;
+  }
+  
+  h1{
+    transition: all 500ms ease-in;
+  }
+}
+
