@@ -60,7 +60,7 @@ nav{
 
 #top{
   width: 100%;
-  height: 40vh;
+  height: 35vh;
   /*make it center*/
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@ nav{
 /*         Menu Middle            */
 #middle{
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   /*make it center*/
   display: flex;
   justify-content: center;
@@ -105,8 +105,8 @@ nav{
   /*todo font match logo*/
   text-align: left;
   font-family: "Tekto", sans-serif;
-  font-weight: bold;
-  color: #333333;
+
+  color: #4e4e4e;
 }
 
 .menu_point:hover{
@@ -127,10 +127,15 @@ nav{
   align-items: center;
 }
 
-.contact_point{
-  margin: 2px;
+.blackline{
+  width: 80%;
+  height: 0;
+  margin: auto;
+  border-bottom: solid 1px rgba(51, 51, 51, 0.71);
+}
+
+.zitat{
   font-size: small;
-  float: left;
 }
 
 .name{
@@ -253,18 +258,6 @@ nav{
 }
 
 /* Inhalte */
-
-
-.zitat{
-  color: white;
-  font-size: large;
-
-  margin-left: 10vw;
-  margin-right: 10vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
 .inhalt{
   text-align: left;
   color: white;
@@ -280,16 +273,80 @@ nav{
   font-size: x-large;
 }
 
+
+/* Über Mich  */
 .slogen{
   color: #ec671a;
   font-size: large;
   margin: 0;
 }
 
-.small_zitat{
-  width: 50%;
+.smallBox_right{
+  float: right;
+  padding-bottom: 4vh;
+  text-align: right;
 }
 
+.smallBox_right ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact_point{
+  margin-top: 2px;
+  font-size: small;
+}
+
+/* Erfahrungen */
+#erfahrungen ul{
+  list-style-type: square;
+  margin-top: 0;
+}
+#erfahrungen p{
+  margin-bottom: 2px;
+}
+
+/* Kontakt */
+
+#contactUl{
+  padding: 0;
+  margin: 0;
+}
+
+.label{
+  margin-bottom: 2px;
+}
+
+.input{
+  background-color: rgba(255, 255, 255, 0.81);
+  color: rgba(0, 0, 0, 0.81);
+  border: none;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#submitButton{
+  border: solid white 1px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family:  "Segoe UI", sans-serif;
+}
+#submitButton:hover{
+  background-color: white;
+  border-color: #4e4e4e;
+
+}
+
+
+/* Impressum */
 .line{
   border: solid 1px rgba(255, 255, 255, 0.71);
   width: 100%;
