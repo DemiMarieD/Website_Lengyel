@@ -28,10 +28,10 @@ function validateFormOnSubmit(theForm) {
     reason += validateEmpty(theForm.message);
 
     if (reason != "") {
-        alert("Einige Felder sind noch nicht korrekt ausgefüllt:\n" + reason);
+        //alert("Einige Felder sind noch nicht korrekt ausgefüllt:\n" + reason);
         return false;
     }
-    //sendFunction();
+    sendFunction();
 
     return true;
 }

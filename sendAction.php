@@ -17,6 +17,8 @@ if(isset($_POST['email'])) {
         return str_replace($bad,"",$string);
     }
 
+    $email_message = "Form details below.\n\n";
+
     $email_message .= "Name: ".clean_string($_POST['name'])."\n";
     $email_message .= "Email: ".clean_string($_POST['email'])."\n";
     $email_message .= "Nachricht: ".clean_string($_POST['message'])."\n";
@@ -31,8 +33,6 @@ if(isset($_POST['email'])) {
     ?>
     <!-- include your own success html here -->
     Thank you for contacting us. We will be in touch with you very soon.
-
     <?php
-
 }
 ?>

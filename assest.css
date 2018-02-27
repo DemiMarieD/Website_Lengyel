@@ -89,9 +89,16 @@ nav{
 
 .item_center ul{
   list-style: none;
-  width: 80%;
+  width: 90%;
   margin: 0;
   padding: 0;
+}
+
+.menu_point:hover .listIconG{
+  display: inline-block;
+}
+.menu_point:hover .listIcon{
+  display: none;
 }
 
 .menu_point{
@@ -110,6 +117,7 @@ nav{
 
 .menu_point:hover{
   background-color: rgba(236, 103, 26, 0.61);
+
 }
 
 
@@ -146,7 +154,7 @@ nav{
 #main
 {
   /*Background*/
-  background: url(images/SMALL_swen_pic.jpg) no-repeat center fixed;
+  background: url(images/SMALL_swen_pic2.jpg) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -162,7 +170,7 @@ nav{
 #me
 {
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_face.jpg) bottom fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/face2.jpg) top fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -194,7 +202,7 @@ nav{
 #kontakt
 {
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_feet.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(images/SMALL_feet.jpg) fixed;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -208,7 +216,7 @@ nav{
 
 #impressum{
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_walkaway.jpg) center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/zug.jpg) center fixed;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -232,10 +240,10 @@ nav{
 
 .textBox_right{
   min-height: 80vh;
-  width: 30vw;
+  width: 40vw;
   background-color: rgba(51, 51, 51, 0.71);
   margin: 10vh;
-  margin-right: 23vw;
+  margin-right: 30vw;
   float: right;
   /*todo position fix*/
 }
@@ -253,6 +261,7 @@ nav{
   background-color: rgba(51, 51, 51, 0.71);
   margin: 10vh;
   margin-right: 30vw;
+  float: right;
 }
 
 /* Inhalte */
