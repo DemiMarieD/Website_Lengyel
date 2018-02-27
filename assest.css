@@ -105,14 +105,12 @@ nav{
   /*todo font match logo*/
   text-align: left;
   font-family: "Tekto", sans-serif;
-
   color: #4e4e4e;
 }
 
 .menu_point:hover{
   background-color: rgba(236, 103, 26, 0.61);
 }
-
 
 
 /*         Menu Bottom           */
@@ -386,6 +384,9 @@ nav{
 .kontakt #right p{
   margin: 2px;
 }
+
+
+
 
 @media all and (max-width: 600px) 
 {

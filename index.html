@@ -4,63 +4,70 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="assest.css">
 	<meta charset="utf-8" name="viewport" content="width=800px, initial-scale=1.0," onload="window.scroll(0,0)">
+	<script src="script.js"></script>
 </head>
 <body style="text-align: center" onload="window.scroll(0,0)">
-	<nav style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
- 		unselectable="on"
- 		onselectstart="return false;" 
- 		onmousedown="return false;">
-		
-		
-			<div id="top">
-				<div class="item_center">
-					<img class="logo" src="images/logo_swenlengyel.png">
+	<nav>
+		<div id="top">
+			<div class="item_center">
+				<img class="logo" src="images/logo_swenlengyel.png">
+			</div>
+		</div>
+		<div class="blackline"></div>
+		<div id="middle">
+			<div class="menu_points item_center">
+				<ul class="menu">
+					<li class="menu_point" id="m1" onclick="menuFunction('m1', 'z1')"><a onclick="topFunction()" style="cursor: pointer;">WILLKOMMEN</a></li>
+					<li class="menu_point" id="m2" onclick="menuFunction('m2', 'z2')"><a href="#me">ÜBER MICH</a></li>
+					<li class="menu_point" id="m3" onclick="menuFunction('m3', 'z3')"><a href="#erfahrungen">ERFAHRUNGEN</a></li>
+					<li class="menu_point" id="m4" onclick="menuFunction('m4', 'z4')"><a href="#kontakt">KONTAKT</a></li>
+					<li class="menu_point" id="m5" onclick="menuFunction('m5', 'z5')"><a href="#impressum">IMPRESSUM</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="blackline"></div>
+		<div id="bottom">
+			<div class="item_center">
+				<div class="zitat" id="z1">
+					<p style="font-style: italic" >
+						„Es gibt nur ein Ziel, Deines.
+						Es gibt nur einen Weg dahin
+						und das ist Deiner.“
+					</p>
+					<p>Unbekannt</p>
+				</div>
+				<div style="display: none" class="zitat"  id="z2">
+					<p style="font-style: italic">
+						„Wenn du etwas erleben willst,
+						was du noch nie erlebt hast,
+						musst du etwas tun,
+						was du noch nie getan hast.“
+					</p>
+					<p>Unbekannt</p>
+				</div>
+				<div style="display: none" class="zitat"  id="z3">
+					<p style="font-style: italic">
+						„Sage es mir und ich vergesse es.
+						Zeige es mir und ich erinnere mich.
+						Lass es mich erleben und ich behalte es.“
+					</p>
+					<p>Konfuzius</p>
+				</div>
+				<div style="display: none" class="zitat"  id="z4">
+					<p style="font-style: italic">
+						„Ich bin verantwortlich für das, was ich tue,
+						aber auch für das, was ich nicht tue.“
+					</p>
+					<p>Frei nach Molière</p>
+				</div>
+				<div style="display: none" class="zitat"  id="z5">
+
 				</div>
 			</div>
-			<div class="blackline"></div>
-			<div id="middle">
-				<div class="menu_points item_center">
-					<ul>
-						<li class="menu_point"><a style="cursor: pointer;" onclick="topFunction()">WILLKOMMEN</a></li>
-						<li class="menu_point"><a href="#me">ÜBER MICH</a></li>
-						<li class="menu_point"><a href="#erfahrungen">ERFAHRUNGEN</a></li>
-						<li class="menu_point"><a href="#kontakt">KONTAKT</a></li>
-						<li class="menu_point"><a href="#impressum">IMPRESSUM</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="blackline"></div>
-			<div id="bottom">
-				<div class="item_center">
-					<div class="zitat" id="z1">
-						<p style="font-style: italic" >
-							„Es gibt nur ein Ziel, Deines.
-							Es gibt nur einen Weg dahin
-							und das ist Deiner.“
-						</p>
-						<p>Unbekannt</p>
-					</div>
-					<div style="display: none" class="zitat"  id="z2">
-						<p style="font-style: italic">
-							„Wenn du etwas erleben willst,
-							was du noch nie erlebt hast,
-							musst du etwas tun,
-							was du noch nie getan hast.“
-						</p>
-						<p>Unbekannt</p>
-					</div>
-					<div  class="zitat"  id="z3"></div>
-					<div  class="zitat"  id="z4"></div>
-				</div>
-			</div>
+		</div>
 	</nav>
 
-	<script>
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
+
 
 	<div id="main">
 
@@ -156,17 +163,24 @@
 					<li class="contact_point"><span style="white-space: nowrap">+49(0)152-33950320</span></li>
 					<li class="contact_point"><span style="white-space: nowrap">sl@erleben-begreifen-handeln.de</span></li>
 				</ul>
-				<form>
-					<p class="lable">Name:</p>
-					<input class="input" type="text" name="name">
-					<p class="lable">E-Mail:</p>
-					<input class="input" type="text" name="email">
-					<p class="lable">Nachricht:</p>
-					<textarea class="input" cols="50" rows="10"></textarea>
-					<br>
-					<input type="submit" id="submitButton" value="Nachricht schicken">
-				</form>
-
+				<div  id="form">
+					<!-- action="http://www.formular-chef.de/fc.cgi"
+					<input type="hidden" name="empfaenger" value="demi-marie@outlook.de" />-->
+					<form onsubmit="return validateFormOnSubmit(this)" action="sendAction.php"
+						  method="post" target="_blank">
+						<p class="lable">Name:</p>
+						<input class="input" type="text" name="name">
+						<p class="lable">E-Mail:</p>
+						<input class="input" type="email" name="email">
+						<p class="lable">Nachricht:</p>
+						<textarea class="input" cols="50" rows="10" name="message"></textarea>
+						<br>
+						<input type="submit" id="submitButton" value="Nachricht schicken">
+					</form>
+				</div>
+				<div style="display: none" id="send">
+					<p>Die Email wurde abgeschickt</p>
+				</div>
 			</div>
 		</div>
 	</div>
