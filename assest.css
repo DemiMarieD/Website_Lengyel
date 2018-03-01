@@ -5,27 +5,27 @@ a{
 a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
-  
-  } 
+
+  }
 a:visited {
   /* Applies to all visited links */
   text-decoration:  none;
-  } 
+  }
 a:hover   {
   /* Applies to links under the pointer */
   text-decoration:  none;
-  } 
+  }
 a:active  {
   /* Applies to activated links */
   text-decoration:  none;
-  } 
+  }
 
 
 html{
   zoom:1.0;
   height: 100vh;
   width: 100vw;
-  scroll-behavior: smooth;
+
   overflow: hidden;
   font-family:  "Segoe UI", sans-serif;
 }
@@ -37,14 +37,13 @@ body{
   flex-flow: column nowrap;
   padding: 0;
   margin: 0;
-  transition: all 500ms ease-in;
+
 }
 
 
 /*  Navbar  */
 
 nav{
-  z-index: 9999;
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.65);
   position: fixed;
@@ -154,7 +153,7 @@ nav{
 #main
 {
   /*Background*/
-  background: url(images/SMALL_swen_pic2.jpg) no-repeat center fixed;
+  background: url(images/Swen_pic.png) no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -162,7 +161,7 @@ nav{
 
   height: 100vh;
   overflow: auto;
-  transition: all 200ms ease-in;
+
 } 
 
 
@@ -397,37 +396,4 @@ nav{
 
 
 
-@media all and (max-width: 600px) 
-{
-
- #pic, h4 {
-    transition: all 500ms ease-in;
-  }
-
-  h4 {
-    transition: all 500ms ease-in;
-    padding-top: 10%;
-  }
-  
-  .normal, .rechts {
-    width: 70%;
-  }
-
-  h1 {
-    transition: all 500ms ease-in;
-    top: 40%; 
-  }
-}
-
-@media all and (min-width: 800px) 
-{
-
- .kontakt, #pic, h4 {
-    transition: all 500ms ease-in;
-  }
-  
-  h1{
-    transition: all 500ms ease-in;
-  }
-}
 
