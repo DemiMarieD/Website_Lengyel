@@ -1,0 +1,399 @@
+
+a{
+  color:inherit;
+}
+a:link    {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+
+  }
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  }
+a:hover   {
+  /* Applies to links under the pointer */
+  text-decoration:  none;
+  }
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  none;
+  }
+
+
+html{
+  zoom:1.0;
+  height: 100vh;
+  width: 100vw;
+
+  overflow: hidden;
+  font-family:  "Segoe UI", sans-serif;
+}
+
+
+body{
+  cursor: default;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+/*  Navbar  */
+
+nav{
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: fixed;
+
+  /*todo min-width?!*/
+  width: 20vw;
+  height: 100vh;
+  right: 0;
+}
+
+
+/*         Menu Top            */
+
+#top{
+  width: 100%;
+  height: 35vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 100%;
+}
+
+/*         Menu Middle            */
+#middle{
+  width: 100%;
+  height: 45vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_center{
+  width: 80%;
+  height: auto;
+
+}
+
+.item_center ul{
+  list-style: none;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_point:hover .listIconG{
+  display: inline-block;
+}
+.menu_point:hover .listIcon{
+  display: none;
+}
+
+.menu_point{
+  /*todo text-size abhängig von Bildschirmgröße*/
+  padding: 10px;
+  z-index: 1000;
+  float: left;
+  width: 100%;
+  padding-left: 15px;
+
+  /*todo font match logo*/
+  text-align: left;
+  font-family: "Tekto", sans-serif;
+  color: #4e4e4e;
+}
+
+.menu_point:hover{
+  background-color: rgba(236, 103, 26, 0.61);
+
+}
+
+
+/*         Menu Bottom           */
+
+#bottom{
+  padding-bottom: 10px ;
+  width: 100%;
+  height: 20vh;
+  /*make it center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blackline{
+  width: 80%;
+  height: 0;
+  margin: auto;
+  border-bottom: solid 1px rgba(51, 51, 51, 0.71);
+}
+
+.zitat{
+  font-size: small;
+}
+
+.name{
+  color: #ec671a;
+  font-weight: bold;
+}
+
+/* Main Page */
+
+#main
+{
+  /*Background*/
+  background: url(images/Swen_pic.png) no-repeat center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  height: 100vh;
+  overflow: auto;
+
+} 
+
+
+/* The Slides */
+#me
+{
+  /*Background*/
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/face2.jpg) top fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+  overflow: auto;
+  transition: all 200ms ease-in;
+}
+
+
+#erfahrungen
+{
+  /*Background*/
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_whichway.jpg) bottom fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: 100vh;
+  overflow: auto;
+  transition: all 200ms ease-in;
+}
+
+
+#kontakt
+{
+  /*Background*/
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(images/SMALL_feet.jpg) fixed;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;   
+
+  height: 100vh;
+  overflow: auto;
+  transition: all 200ms ease-in;
+}
+
+#impressum{
+  /*Background*/
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/zug.jpg) center fixed;
+  background-repeat:no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  background-origin: content-box;
+
+  height: 100vh;
+  overflow: auto;
+  transition: all 200ms ease-in;
+}
+
+/*  TextBoxen */
+
+.textBox_main{
+  min-height: 55vh;
+  width: 45vw;
+  background-color: rgba(92, 92, 92, 0.71);
+  margin: 10vh;
+}
+
+.textBox_right{
+  min-height: 80vh;
+  width: 40vw;
+  background-color: rgba(51, 51, 51, 0.71);
+  margin: 10vh;
+  margin-right: 30vw;
+  float: right;
+  /*todo position fix*/
+}
+
+.textBox_left{
+  min-height: 80vh;
+  width: 40vw;
+  background-color: rgba(51, 51, 51, 0.71);
+  margin: 10vh;
+}
+
+.textBox_middle{
+  min-height: 80vh;
+  width: 60vw;
+  background-color: rgba(51, 51, 51, 0.71);
+  margin: 10vh;
+  margin-right: 30vw;
+  float: right;
+}
+
+/* Inhalte */
+.inhalt{
+  text-align: left;
+  color: white;
+
+  margin-left: 4vw;
+  margin-right: 4vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+/* Text bestandteile*/
+.titel{
+  font-size: x-large;
+}
+
+
+/* Über Mich  */
+.slogen{
+  color: #ec671a;
+  font-size: large;
+  margin: 0;
+}
+
+.smallBox_right{
+  float: right;
+  padding-bottom: 4vh;
+  text-align: right;
+}
+
+.smallBox_right ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.contact_point{
+  margin-top: 2px;
+  font-size: small;
+}
+
+/* Erfahrungen */
+#erfahrungen ul{
+  list-style-type: square;
+  margin-top: 0;
+}
+#erfahrungen p{
+  margin-bottom: 2px;
+}
+
+/* Kontakt */
+
+#contactUl{
+  padding: 0;
+  margin: 0;
+}
+
+.label{
+  margin-bottom: 2px;
+}
+
+.input{
+  background-color: rgba(255, 255, 255, 0.81);
+  color: rgba(0, 0, 0, 0.81);
+  border: none;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#submitButton{
+  border: solid white 1px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family:  "Segoe UI", sans-serif;
+}
+#submitButton:hover{
+  background-color: white;
+  border-color: #4e4e4e;
+
+}
+
+
+/* Impressum */
+.line{
+  border: solid 1px rgba(255, 255, 255, 0.71);
+  width: 100%;
+  height: 0;
+}
+
+#gesetzestext{
+  margin-top: 40px;
+}
+
+#gesetzestext h4{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#gesetzestext h3{
+    margin-top: 50px;
+}
+
+.kontakt{
+  margin-bottom: 40px;
+}
+
+.kontakt #left{
+  display: inline-block;
+}
+.kontakt #right{
+  display: inline-block;
+  padding: 5px;
+}
+
+.kontakt #left img{
+  height: 20vh;
+  background-color: rgba(255, 255, 255, 0.71);
+  margin-right: 5px;
+}
+.kontakt #right p{
+  margin: 2px;
+}
+
+
+
+
+
