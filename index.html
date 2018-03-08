@@ -1,244 +1,270 @@
 <!DOCTYPE html>
-<html style="min-width: 800px;">
+<html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="assest.css">
-	<meta charset="utf-8" name="viewport" content="width=800px, initial-scale=1.0," onload="window.scroll(0,0)">
+	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 800px)" href="assest.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 799px)" href="mobile.css">
+	<meta charset="utf-8" name="viewport" content="min-width=device-width, initial-scale=1.0, max-width=1024px" onload="window.scroll(0,0)">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="script.js"></script>
 </head>
 <body style="text-align: center" onload="window.scroll(0,0)">
-	<nav>
-		<div id="top">
-			<div class="item_center">
-				<img class="logo" src="images/logo_swenlengyel.png">
+<nav>
+	<div id="top">
+		<div class="item_center">
+			<img class="logo" src="images/logo_swenlengyel.png">
+		</div>
+	</div>
+	<div class="blackline"></div>
+	<div id="middle">
+		<div class="menu_points item_center">
+			<ul class="menu">
+				<li class="menu_point" onclick="menuFunction('m1', 'z1')">
+					<a class="mp" id="m1" onclick="topFunction()" style="cursor: pointer;">WILLKOMMEN</a>
+				</li>
+				<li class="menu_point"  onclick="menuFunction('m2', 'z2')">
+					<a class="mp" id="m2" href="#me">ÜBER MICH</a></li>
+				<li class="menu_point" onclick="menuFunction('m3', 'z3')">
+					<a class="mp" id="m3"  href="#erfahrungen">ERFAHRUNGEN</a></li>
+				<li class="menu_point" onclick="menuFunction('m4', 'z4')">
+					<a class="mp" id="m4"  href="#kontakt">KONTAKT</a></li>
+				<li class="menu_point"  onclick="menuFunction('m5', 'z5')">
+					<a class="mp" id="m5" href="#impressum">IMPRESSUM</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="blackline"></div>
+	<div id="bottom">
+		<div class="item_center">
+			<div style="display: none" class="zitat" id="z0">
+				<p style="font-style: italic" >
+					„Es gibt nur ein Ziel, Deines.
+					Es gibt nur einen Weg dahin
+					und das ist Deiner.“
+				</p>
+				<p style="font-size: x-small">Unbekannt</p>
+			</div>
+			<div style="display: none" class="zitat"  id="z3">
+				<p style="font-style: italic">
+					„Wenn du etwas erleben willst,
+					was du noch nie erlebt hast,
+					musst du etwas tun,
+					was du noch nie getan hast.“
+				</p>
+				<p style="font-size: x-small">Unbekannt</p>
+			</div>
+			<div style="display: none" class="zitat"  id="z4">
+				<p style="font-style: italic">
+					„Sage es mir und ich vergesse es.
+					Zeige es mir und ich erinnere mich.
+					Lass es mich erleben und ich behalte es.“
+				</p>
+				<p style="font-size: x-small">Konfuzius</p>
+			</div>
+			<div style="display: none" class="zitat"  id="z2">
+				<p style="font-style: italic">
+					„Ich bin verantwortlich für das, was ich tue,
+					aber auch für das, was ich nicht tue.“
+				</p>
+				<p style="font-size: x-small">Frei nach Molière</p>
+			</div>
+			<div style="display: none" class="zitat"  id="z5">
+
 			</div>
 		</div>
-		<div class="blackline"></div>
-		<div id="middle">
-			<div class="menu_points item_center">
-				<ul class="menu">
-					<li class="menu_point" id="m1" onclick="menuFunction('m1', 'z1')">
-						<a onclick="topFunction()" style="cursor: pointer;">WILLKOMMEN</a>
-					</li>
-					<li class="menu_point" id="m2" onclick="menuFunction('m2', 'z2')">
-						<a href="#me">ÜBER MICH</a></li>
-					<li class="menu_point" id="m3" onclick="menuFunction('m3', 'z3')">
-						<a href="#erfahrungen">ERFAHRUNGEN</a></li>
-					<li class="menu_point" id="m4" onclick="menuFunction('m4', 'z4')">
-						<a href="#kontakt">KONTAKT</a></li>
-					<li class="menu_point" id="m5" onclick="menuFunction('m5', 'z5')">
-						<a href="#impressum">IMPRESSUM</a></li>
+	</div>
+</nav>
+
+
+
+<div id="main">
+
+</div>
+<div id="me">
+	<div class="textBox_right">
+		<div class="inhalt">
+			<h4 class="titel">STANDPUNKT</h4>
+			<h6 class="slogen">ERLEBEN! BEGREIFEN! HANDELN!</h6>
+			<p>Dies sind die drei Grundpfeiler meiner täglichen Arbeit.</p>
+			<p>Sowohl mit Einzelpersonen als auch mit Gruppen.</p>
+			<p>Mit meinen bisherigen beruflichen Erfahrungen möchte ich Impulse geben,
+				die Ihnen die Möglichkeit eröffnen,
+				unterschiedliche Situationen erleb- und begreifbar zu machen.</p>
+			<p>Durch das Begreifen der unterschiedlichsten Alltagssituationen werden Sie besser ins Handeln kommen,
+				um die von Ihnen gewünschte Veränderung zu erreichen.</p>
+			<p>Jeder Mensch, jedes Team, jede Situation, jedes Problem, jeder Konflikt ist einzigartig.</p>
+			<br>
+			<div class="smallBox_right">
+				<div id="unterschrift">
+					<img src="images/unterschirft.png">
+				</div>
+				<ul>
+					<li class="contact_point">Erlebnispädagoge,</li>
+					<li class="contact_point">Kampfesspieleanleiter,</li>
+					<li class="contact_point">Selbstbehauptungstrainer</li>
 				</ul>
 			</div>
 		</div>
-		<div class="blackline"></div>
-		<div id="bottom">
-			<div class="item_center">
-				<div style="display: none" class="zitat" id="z0">
-					<p style="font-style: italic" >
-						„Es gibt nur ein Ziel, Deines.
-						Es gibt nur einen Weg dahin
-						und das ist Deiner.“
-					</p>
-					<p>Unbekannt</p>
-				</div>
-				<div style="display: none" class="zitat"  id="z3">
-					<p style="font-style: italic">
-						„Wenn du etwas erleben willst,
-						was du noch nie erlebt hast,
-						musst du etwas tun,
-						was du noch nie getan hast.“
-					</p>
-					<p>Unbekannt</p>
-				</div>
-				<div style="display: none" class="zitat"  id="z4">
-					<p style="font-style: italic">
-						„Sage es mir und ich vergesse es.
-						Zeige es mir und ich erinnere mich.
-						Lass es mich erleben und ich behalte es.“
-					</p>
-					<p>Konfuzius</p>
-				</div>
-				<div style="display: none" class="zitat"  id="z2">
-					<p style="font-style: italic">
-						„Ich bin verantwortlich für das, was ich tue,
-						aber auch für das, was ich nicht tue.“
-					</p>
-					<p>Frei nach Molière</p>
-				</div>
-				<div style="display: none" class="zitat"  id="z5">
-
-				</div>
-			</div>
-		</div>
-	</nav>
-
-
-
-	<div id="main">
-
 	</div>
-	<div id="me">
-		<div class="textBox_right">
-			<div class="inhalt">
-				<h4 class="titel">STANDPUNKT</h4>
-				<h6 class="slogen">ERLEBEN! BEGREIFEN! HANDELN!</h6>
-				<p>Dies sind die drei Grundpfeiler meiner täglichen Arbeit.</p>
-				<p>Sowohl mit Einzelpersonen als auch mit Gruppen.</p>
-				<p>Mit meinen bisherigen beruflichen Erfahrungen möchte ich Impulse geben,
-					die Ihnen die Möglichkeit eröffnen,
-					unterschiedliche Situationen erleb- und begreifbar zu machen.</p>
-				<p>Durch das Begreifen der unterschiedlichsten Alltagssituationen werden Sie besser ins Handeln kommen,
-					um die von Ihnen gewünschte Veränderung zu erreichen.</p>
-				<p>Jeder Mensch, jedes Team, jede Situation, jedes Problem, jeder Konflikt ist einzigartig.</p>
+</div>
+<div id="erfahrungen">
+	<div class="textBox_left">
+		<div class="inhalt">
+			<h4 class="titel">ERFAHRUNGEN</h4>
+
+			<p>Adam Opel AG</p>
+			<ul>
+				<li>Teamtraining für die neuen Auszubildenden</li>
+			</ul>
+
+			<p>Aktiv Reisen GmbH</p>
+			<ul>
+				<li>geführte Kanutouren mit Gruppen</li>
+				<li>Bogenschießen mit Schulklassen</li>
+				<li>erlebnispädagogische Firmenevents</li>
+			</ul>
+
+			<p>Caritasverband der Erzdiözese Freiburg e.V.</p>
+			<ul>
+				<li>FSJ-/ BFD Seminare</li>
+				<li>Seminar <span style="font-style: italic">Kommunikation und Selbstbestimmung</span></li>
+			</ul>
+
+			<p>EOS Erlebnispädagogik E.V.</p>
+			<ul>
+				<li>Klassenfahrten</li>
+				<li><span style="font-style: italic">FSJ-/ BFD Seminare</span></li>
+			</ul>
+
+			<p>Paulinenpflege Winnenden e.V.</p>
+			<ul>
+				<li>Kampfesspiele® mit hör- und sprachbehinderte Jungen</li>
+			</ul>
+
+			<p>Sektion Heilbronn des Deutschen Alpenvereins (DAV) e.V.</p>
+			<ul>
+				<li>Erlebnispädagogische Einheiten für Schulklassen in der Kletterhalle</li>
+			</ul>
+
+			<p>Stadt Heilbronn</p>
+			<ul>
+				<li>Leitung eines Jugendtreffs</li>
+				<li>Erlebnispädagogisches Angebote im Rahmen
+					eines Ferienprogramms in der offenen
+					Jugendarbeit: Kampfesspiele®, Kanutour, Stockfechten</li>
+				<li>Grundschule:  Kampfesspiele® für Jungen, Erlebnispädagogischer Tag</li>
+				<li>Teamtag-/-training für die Mitarbeiter der offenen Jugendarbeit</li>
+				<li>Klettergruppe in der offenen Jugendarbeit</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="kontakt">
+	<div class="textBox_left">
+		<div class="inhalt">
+			<h4 class="titel">KONTAKT</h4>
+			<p>Machen Sie den ersten Schritt und lassen Sie uns miteinander in Kontakt kommen.</p>
+			<ul id="contactUl" style="list-style: none">
+				<li class="contact_point name">Swen Lengyel</li>
+				<li class="contact_point"><span style="white-space: nowrap">+49(0)152-33950320</span></li>
+				<li class="contact_point"><span style="white-space: nowrap">sl@erleben-begreifen-handeln.de</span></li>
+			</ul>
+			<div id="tohide">
+				<!-- action="http://www.formular-chef.de/fc.cgi"
+                <input type="hidden" name="empfaenger" value="demi-marie@outlook.de" />-->
+				<form onsubmit="return validateFormOnSubmit(this)" action="sendAction.php"
+					  method="post" target="_blank">
+					<p class="lable">Name:</p>
+					<input class="input" type="text" name="name" id="name" placeholder="Ihr Name" onkeyup="liveTestName()" required>
+					<p class="lable">E-Mail:</p>
+					<input class="input" type="email" name="email" id="email" placeholder="Ihre Email-Adresse" onkeyup="liveTestMail()" required>
+					<p class="lable">Nachricht:</p>
+					<textarea class="input" cols="50" rows="10" name="message" id="message" placeholder="Bitte schreiben Sie hier Ihre Nachricht." onkeyup="liveTestMessage()" required></textarea>
+					<br>
+					<input type="submit" id="submitButton" value="Nachricht schicken">
+				</form>
+			</div>
+			<div style="display: none" id="send">
 				<br>
-				<div class="smallBox_right">
-					<div id="unterschrift">
-						<img src="images/unterschirft.png">
-					</div>
-					<ul>
-						<li class="contact_point">Erlebnispädagoge,</li>
-						<li class="contact_point">Kampfesspieleanleiter,</li>
-						<li class="contact_point">Selbstbehauptungstrainer</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="erfahrungen">
-		<div class="textBox_left">
-			<div class="inhalt">
-				<h4 class="titel">ERFAHRUNG</h4>
-
-				<p>Adam Opel AG</p>
-				<ul>
-					<li>Teamtraining für die neuen Auszubildenden</li>
-				</ul>
-
-				<p>Aktiv Reisen GmbH</p>
-				<ul>
-					<li>geführte Kanutouren mit Gruppen</li>
-					<li>Bogenschießen mit Schulklassen</li>
-					<li>erlebnispädagogische Firmenevents</li>
-				</ul>
-
-				<p>Caritasverband der Erzdiözese Freiburg e.V.</p>
-				<ul>
-					<li>FSJ-/ BFD Seminare</li>
-					<li>Seminar <span style="font-style: italic">Kommunikation und Selbstbestimmung</span></li>
-				</ul>
-
-				<p>EOS Erlebnispädagogik E.V.</p>
-				<ul>
-					<li>Klassenfahrten</li>
-					<li><span style="font-style: italic">FSJ-/ BFD Seminare</span></li>
-				</ul>
-
-				<p>Paulinenpflege Winnenden e.V.</p>
-				<ul>
-					<li>Kampfesspiele® mit hör- und sprachbehinderte Jungen</li>
-				</ul>
-
-				<p>Sektion Heilbronn des Deutschen Alpenvereins (DAV) e.V.</p>
-				<ul>
-					<li>Erlebnispädagogische Einheiten für Schulklassen in der Kletterhalle</li>
-				</ul>
-
-				<p>Stadt Heilbronn</p>
-				<ul>
-					<li>Leitung eines Jugendtreffs</li>
-					<li>Erlebnispädagogisches Angebote im Rahmen
-						eines Ferienprogramms in der offenen
-						Jugendarbeit: Kampfesspiele®, Kanutour, Stockfechten</li>
-					<li>Grundschule:  Kampfesspiele® für Jungen, Erlebnispädagogischer Tag</li>
-					<li>Teamtag-/-training für die Mitarbeiter der offenen Jugendarbeit</li>
-					<li>Klettergruppe in der offenen Jugendarbeit</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div id="kontakt">
-		<div class="textBox_left">
-			<div class="inhalt">
-				<h4 class="titel">KONTAKT</h4>
-				<p>Machen Sie den ersten Schritt und lassen Sie uns miteinander in Kontakt kommen.</p>
-				<ul id="contactUl" style="list-style: none">
-					<li class="contact_point name">Swen Lengyel</li>
-					<li class="contact_point"><span style="white-space: nowrap">+49(0)152-33950320</span></li>
-					<li class="contact_point"><span style="white-space: nowrap">sl@erleben-begreifen-handeln.de</span></li>
-				</ul>
-				<div  id="form">
-					<!--todo live check -->
-					<!-- action="http://www.formular-chef.de/fc.cgi"
-					<input type="hidden" name="empfaenger" value="demi-marie@outlook.de" />-->
-					<form onsubmit="return validateFormOnSubmit(this)" action="sendAction.php"
-						  method="post" target="_blank">
-						<p class="lable">Name:</p>
-						<input class="input" type="text" name="name">
-						<p class="lable">E-Mail:</p>
-						<input class="input" type="email" name="email">
-						<p class="lable">Nachricht:</p>
-						<textarea class="input" cols="50" rows="10" name="message"></textarea>
-						<br>
-						<input type="submit" id="submitButton" value="Nachricht schicken">
-					</form>
-				</div>
-				<div style="display: none" id="send">
-					<p>Die Email wurde abgeschickt</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="impressum">
-		<div class="textBox_middle">
-			<div class="inhalt">
-				<h4 class="titel">IMPRESSUM</h4>
-
-				<div class="kontakt">
-					<div id="left">
-						<img src="images/logo_swenlengyel.png">
-					</div>
-					<div id="right">
-						<p class="name">Swen Lengyle</p>
-						<p>Pappeläcker 10</p>
-						<p>74226 Nordheim</p>
-						<p>+49 (0) 152 - 33 95 03 20</p>
-						<p>sl@erleben-begreifen-handeln.de</p>
-					</div>
-					<br>
-					<p>Gestaltung: Demi Dauerer & Mohammad Rabe Ez Eldeen</p>
-				</div>
-
 				<div class="line"></div>
-
-				<div id="gesetzestext">
-					<h3>Haftungsausschluss</h3>
-
-					<h4>Haftung für Inhalte</h4>
-					<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu Überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-
-					<h4>Haftung für Links</h4>
-					<p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
-
-					<h4>Urheberrecht</h4>
-					<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-
-
-
-					<h3>Datenschutzerklärung:</h3>
-
-					<h4>Datenschutz</h4>
-					<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
-
-					<h4>Kontaktformular</h4>
-					<p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
-
-					<br>
-					<p style="font-style: italic">Quelle: https://www.e-recht24.de</p>
+				<h4>DANKE!...</h4>
+				<p>... dass Sie sich für den ersten Schritt entschieden haben und mit mir in Kontakt getreten sind.
+					Ich werde mich schnellstmöglich bei Ihnen melden.</p>
+				<p>Bis dahin wünsche ich Ihnen eine erlebnisreiche Zeit</p>
+				<div class="smallBox_right">
+					<div>
+						<img style="float: right" src="images/unterschirft.png">
+					</div>
+					<p style="float: right">Swen Lengyel</p>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="impressum">
+	<div class="textBox_middle">
+		<div class="inhalt">
+			<h4 class="titel">IMPRESSUM</h4>
+
+			<div class="kontakt">
+				<div id="left">
+					<img src="images/logo_swenlengyel.png">
+				</div>
+				<div id="right">
+					<p class="name">Swen Lengyel</p>
+					<p>Pappeläcker 10</p>
+					<p>74226 Nordheim</p>
+					<p>+49 (0) 152 - 33 95 03 20</p>
+					<p>sl@erleben-begreifen-handeln.de</p>
+				</div>
+				<br>
+				<br>
+				<div id="demi">
+					<p class="name">Gestaltung & Programmierung:</p>
+					<p>Demi Dauerer & Mohammad Rabe Ez Eldeen</p>
+					<p>demi-marie@outlook.de, mohammad.rabeezeldeen@it-lab.ktn.at</p>
+				</div>
+				<br>
+				<div id="bildermacherin">
+					<p class="name">Fotos:</p>
+					<p>MBdieBildermacherin Fotografien von Marlene Bihlheimer</p>
+					<p>mb.diebildermacherin@gmail.com</p>
+					<p>+49 (0)176-70675977</p>
+					<p><a href="https://www.facebook.com/mb.diebildermacherin" target="_blank"><i class="fab fa-facebook"></i> mb.diebildermacherin   </a></p>
+					<p><i class="fab fa-instagram"></i> mbdiebildermacherin</p>
+				</div>
+			</div>
+
+			<div class="line"></div>
+
+			<div id="gesetzestext">
+				<h3>Haftungsausschluss</h3>
+
+				<h4>Haftung für Inhalte</h4>
+				<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu Überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
+				<h4>Haftung für Links</h4>
+				<p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
+				<h4>Urheberrecht</h4>
+				<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+
+
+
+				<h3>Datenschutzerklärung:</h3>
+
+				<h4>Datenschutz</h4>
+				<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+				<h4>Kontaktformular</h4>
+				<p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+
+				<br>
+				<p style="font-style: italic">Quelle: https://www.e-recht24.de</p>
+			</div>
+		</div>
+	</div>
+</div>
 </body>

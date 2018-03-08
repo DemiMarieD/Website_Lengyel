@@ -6,28 +6,34 @@ a:link    {
   /* Applies to all unvisited links */
   text-decoration:  none;
 
-  }
+}
 a:visited {
   /* Applies to all visited links */
   text-decoration:  none;
-  }
+}
 a:hover   {
   /* Applies to links under the pointer */
   text-decoration:  none;
-  }
+}
 a:active  {
   /* Applies to activated links */
   text-decoration:  none;
-  }
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(fonts/segoeui.ttf);
+}
 
 
 html{
   zoom:1.0;
   height: 100vh;
   width: 100vw;
-
   overflow: hidden;
-  font-family:  "Segoe UI", sans-serif;
+  font-family:  myFont, sans-serif;
+  min-width: 800px;
+  -webkit-overflow-scrolling: auto;
 }
 
 
@@ -37,9 +43,7 @@ body{
   flex-flow: column nowrap;
   padding: 0;
   margin: 0;
-
 }
-
 
 /*  Navbar  */
 
@@ -47,9 +51,10 @@ nav{
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.65);
   position: fixed;
-
+  margin-right: 17px;
   /*todo min-width?!*/
-  width: 20vw;
+  width: 20%;
+  min-width:200px;
   height: 100vh;
   right: 0;
 }
@@ -93,30 +98,22 @@ nav{
   padding: 0;
 }
 
-.menu_point:hover .listIconG{
-  display: inline-block;
-}
-.menu_point:hover .listIcon{
-  display: none;
-}
-
-.menu_point{
+.menu_point a{
   /*todo text-size abhängig von Bildschirmgröße*/
   padding: 10px;
-  z-index: 1000;
+  z-index: 2;
   float: left;
   width: 100%;
   padding-left: 15px;
 
   /*todo font match logo*/
   text-align: left;
-  font-family: "Tekto", sans-serif;
+  font-family: sans-serif;
   color: #4e4e4e;
 }
 
-.menu_point:hover{
+.menu_point a:hover{
   background-color: rgba(236, 103, 26, 0.61);
-
 }
 
 
@@ -153,7 +150,7 @@ nav{
 #main
 {
   /*Background*/
-  background: url(images/Swen_pic.png) no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(images/Swen_pic.jpg) no-repeat center scroll;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -161,15 +158,13 @@ nav{
 
   height: 100vh;
   overflow: auto;
-
-} 
+}
 
 
 /* The Slides */
-#me
-{
+#me {
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/face2.jpg) top fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(images/face2.jpg) top scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -179,35 +174,36 @@ nav{
   height: 100vh;
   overflow: auto;
   transition: all 200ms ease-in;
+
 }
+
 
 
 #erfahrungen
 {
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_whichway.jpg) bottom fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/SMALL_whichway.jpg) bottom scroll;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   height: 100vh;
   overflow: auto;
   transition: all 200ms ease-in;
+
 }
 
 
 #kontakt
 {
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(images/SMALL_feet.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(images/SMALL_feet.jpg) scroll;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size:cover;   
-
+  background-size:cover;
   height: 100vh;
   overflow: auto;
   transition: all 200ms ease-in;
@@ -215,14 +211,13 @@ nav{
 
 #impressum{
   /*Background*/
-  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/zug.jpg) center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)),url(images/zug.jpg) center scroll;
   background-repeat:no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size:cover;
   background-origin: content-box;
-
   height: 100vh;
   overflow: auto;
   transition: all 200ms ease-in;
@@ -241,15 +236,15 @@ nav{
   min-height: 80vh;
   width: 40vw;
   background-color: rgba(51, 51, 51, 0.71);
-  margin: 10vh;
-  margin-right: 30vw;
-  float: right;
-  /*todo position fix*/
+  margin-left: 30vw;
+  float: left;
+  min-width: 380px;
 }
 
 .textBox_left{
   min-height: 80vh;
   width: 40vw;
+  min-width: 380px;
   background-color: rgba(51, 51, 51, 0.71);
   margin: 10vh;
 }
@@ -257,6 +252,7 @@ nav{
 .textBox_middle{
   min-height: 80vh;
   width: 60vw;
+  min-width: 480px;
   background-color: rgba(51, 51, 51, 0.71);
   margin: 10vh;
   margin-right: 30vw;
@@ -364,12 +360,12 @@ nav{
 }
 
 #gesetzestext h4{
-    margin-top: 30px;
-    margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 #gesetzestext h3{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .kontakt{
@@ -394,6 +390,18 @@ nav{
 }
 
 
+#bildermacherin{
+  margin: 5px;
+}
 
+#bildermacherin p{
+  margin: 2px;
+}
 
+#demi{
+  margin: 5px;
+}
 
+#demi p{
+  margin: 2px;
+}

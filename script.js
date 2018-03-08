@@ -5,14 +5,14 @@ function topFunction() {
 
 
 function menuFunction(mId, zId) {
-    menu = document.getElementsByClassName("menu_point");
-    for(var i=0; i<menu.length; i++){
+    menu = document.getElementsByClassName("mp");
+    for (var i = 0; i < menu.length; i++) {
         menu[i].style.backgroundColor = "transparent";
     }
     document.getElementById(mId).style.backgroundColor = "rgba(236, 103, 26, 0.61)";
 
     zitat = document.getElementsByClassName("zitat");
-    for(var j=0; j<zitat.length; j++){
+    for (var j = 0; j < zitat.length; j++) {
         zitat[j].style.display = "none";
     }
     document.getElementById(zId).style.display = "block";
@@ -20,35 +20,49 @@ function menuFunction(mId, zId) {
 
 
 /*Kontakt form*/
+function liveTestName() {
+    var name = document.getElementById("name");
+    validateUsername(name);
+}
+function liveTestMail() {
+    var email = document.getElementById("email");
+    validateEmail(email);
+}
+function liveTestMessage() {
+    var message = document.getElementById("message");
+    validateEmpty(message);
+}
+
+
 function validateFormOnSubmit(theForm) {
     var reason = "";
 
-    reason += validateUsername(theForm.name);
-    reason += validateEmail(theForm.email);
     reason += validateEmpty(theForm.message);
+    reason += validateEmail(theForm.email);
 
     if (reason != "") {
         //alert("Einige Felder sind noch nicht korrekt ausgefüllt:\n" + reason);
         return false;
+    }else {
+        sendFunction();
     }
-    sendFunction();
 
     return true;
 }
 
 function sendFunction() {
     document.getElementById('send').style.display = "block";
-    document.getElementById('from').style.display = "none";
+    document.getElementById('tohide').style.display = "none";
 }
 
 function validateEmpty(fld) {
     var error = "";
 
     if (fld.value.length == 0) {
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Bitte schreiben Sie eine Nachricht.\n"
     } else {
-
+        fld.style.background = 'rgba(255, 255, 255, 0.71)';
     }
     return error;
 }
@@ -58,13 +72,13 @@ function validateUsername(fld) {
     var illegalChars = /\W/; // allow letters, numbers, and underscores
 
     if (fld.value == "") {
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Bitte geben Sie einen Namen an.\n";
     }else if (illegalChars.test(fld.value)) {
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Bitte geben Sie einen gültigen Namen an. (es sind keine Sonderzeichen erlaubt)\n";
-    } else {
-
+    }else{
+        fld.style.background = 'rgba(255, 255, 255, 0.71)';
     }
     return error;
 }
@@ -81,16 +95,16 @@ function validateEmail(fld) {
     var illegalChars= /[\(\)\<\>\,\;\:\\\"\[\]]/ ;
 
     if (fld.value == "") {
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Bitte geben Sie eine Email Adresse an.\n";
     } else if (!emailFilter.test(tfld)) {              //test email for illegal characters
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Bitte geben Sie eine gültige Email Adresse an.\n";
     } else if (fld.value.match(illegalChars)) {
-        fld.style.background = 'rgba(236, 29, 12, 0.61)';
+        fld.style.background = 'rgba(236, 103, 26, 0.7)';
         error = "Die Email Adresse beinhaltet ungültige Zeichen.\n";
     } else {
-
+        fld.style.background = 'rgba(255, 255, 255, 0.71)';
     }
     return error;
 }
