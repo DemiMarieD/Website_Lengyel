@@ -1,3 +1,6 @@
+//document.ontouchmove = function(e){ e.preventDefault(); }
+
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -6,13 +9,13 @@ function topFunction() {
 
 function menuFunction(mId, zId) {
     menu = document.getElementsByClassName("mp");
-    for (var i = 0; i < menu.length; i++) {
+    for(var i=0; i<menu.length; i++){
         menu[i].style.backgroundColor = "transparent";
     }
     document.getElementById(mId).style.backgroundColor = "rgba(236, 103, 26, 0.61)";
 
     zitat = document.getElementsByClassName("zitat");
-    for (var j = 0; j < zitat.length; j++) {
+    for(var j=0; j<zitat.length; j++){
         zitat[j].style.display = "none";
     }
     document.getElementById(zId).style.display = "block";

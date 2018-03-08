@@ -9,7 +9,7 @@
 
 if(isset($_POST['email'])) {
 
-    $email_to = "demi-marie@outlook.de";
+    $email_to = "sl@erleben-begreifen-handeln.de";
     $email_subject = "Sie haben eine neue Nachricht";
 
     function clean_string($string) {
@@ -30,9 +30,6 @@ if(isset($_POST['email'])) {
 
     @mail($email_to, $email_subject, $email_message, $headers);
 
-    ?>
-    <!-- include your own success html here -->
-    Thank you for contacting us. We will be in touch with you very soon.
-    <?php
+    echo"<script>window.close();</script>";
 }
 ?>
