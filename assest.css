@@ -59,6 +59,13 @@ nav{
   right: 0;
 }
 
+#show{
+  display: none;
+}
+
+#menu_btn{
+  display: none;
+}
 
 /*         Menu Top            */
 
@@ -143,6 +150,7 @@ nav{
 .name{
   color: #ec671a;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /* Main Page */
@@ -381,12 +389,12 @@ nav{
 }
 
 .kontakt #left img{
-  height: 20vh;
+  height: 18vh;
   background-color: rgba(255, 255, 255, 0.71);
   margin-right: 5px;
 }
 .kontakt #right p{
-  margin: 2px;
+  margin: 0;
 }
 
 
@@ -395,7 +403,13 @@ nav{
 }
 
 #bildermacherin p{
-  margin: 2px;
+  margin: 0;
+  font-size: small;
+}
+
+#bildermacherin .name{
+  margin-bottom: 3px;
+  font-size: medium;
 }
 
 #demi{
@@ -403,5 +417,11 @@ nav{
 }
 
 #demi p{
-  margin: 2px;
+  margin: 0;
+  font-size: small;
+}
+
+#demi .name{
+  margin-bottom: 3px;
+  font-size: medium;
 }

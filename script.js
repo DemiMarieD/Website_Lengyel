@@ -6,6 +6,25 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+function showMenu() {
+    document.getElementById("middle").style.display ="inline-block";
+    document.getElementById("show").style.display ="none";
+    document.getElementById("hide").style.display ="inline-block";
+}
+
+function hideMenu() {
+    document.getElementById("middle").style.display ="none";
+    document.getElementById("hide").style.display ="none";
+    document.getElementById("show").style.display ="inline-block";
+}
+// Close the dropdown menu if the user clicks outside of it
+/*
+window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+        document.getElementById("middle").style.display ="none";
+    }
+}
+*/
 
 function menuFunction(mId, zId) {
     menu = document.getElementsByClassName("mp");
